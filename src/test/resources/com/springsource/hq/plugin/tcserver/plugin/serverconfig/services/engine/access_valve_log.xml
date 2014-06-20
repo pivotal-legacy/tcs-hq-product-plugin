@@ -1,0 +1,9 @@
+<Valve
+    className="org.apache.catalina.valves.FastCommonAccessLogValve"
+    directory="${catalina.home}/logs/"
+    prefix="access_log"
+    fileDateFormat="yyyy-MM-dd.HH"
+    suffix=".log"
+    pattern="%t %H cookie:%{SESSIONID}c request:%{SESSIONID}r  %m %U %s %q %r"
+
+/>

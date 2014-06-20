@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="profile" type="profile"/>
+
+  <xs:complexType name="profile">
+    <xs:sequence>
+      <xs:element name="settings" type="settings"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="settings">
+    <xs:sequence>
+      <xs:element name="configuration" type="configuration"/>
+      <xs:element name="data-sources">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="data-source" type="data-source" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="services">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="service" type="service" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="configuration">
+    <xs:sequence>
+      <xs:element name="general-config" type="general-config"/>
+      <xs:element name="environment" type="environment"/>
+      <xs:element name="context-container" type="context-container"/>
+      <xs:element name="server-defaults" type="server-defaults"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="general-config">
+    <xs:sequence>
+      <xs:element name="server-properties" type="server-properties"/>
+      <xs:element name="jmx-listener" type="jmx-listener"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="server-properties">
+    <xs:sequence/>
+    <xs:attribute name="port" type="xs:long"/>
+    <xs:attribute name="shutdown" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="jmx-listener">
+    <xs:sequence/>
+    <xs:attribute name="access-file" type="xs:string"/>
+    <xs:attribute name="authenticate" type="xs:boolean"/>
+    <xs:attribute name="bind" type="xs:string"/>
+    <xs:attribute name="cipher-suites" type="xs:string"/>
+    <xs:attribute name="client-auth" type="xs:boolean"/>
+    <xs:attribute name="enabled" type="xs:boolean"/>
+    <xs:attribute name="keystore-file" type="xs:string"/>
+    <xs:attribute name="keystore-pass" type="xs:string"/>
+    <xs:attribute name="password-file" type="xs:string"/>
+    <xs:attribute name="port" type="xs:long"/>
+    <xs:attribute name="protocols" type="xs:string"/>
+    <xs:attribute name="truststore-file" type="xs:string"/>
+    <xs:attribute name="truststore-pass" type="xs:string"/>
+    <xs:attribute name="use-jdk-client-factory" type="xs:boolean"/>
+    <xs:attribute name="use-ssl" type="xs:boolean"/>
+  </xs:complexType>
+
+  <xs:complexType name="environment">
+    <xs:sequence>
+      <xs:element name="jvm-options" type="jvm-options"/>
+    </xs:sequence>
+    <xs:attribute name="java-home" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="jvm-options">
+    <xs:sequence>
+      <xs:element name="jvm-general" type="jvm-general"/>
+      <xs:element name="memory" type="memory"/>
+      <xs:element name="garbage-collection" type="garbage-collection"/>
+      <xs:element name="debug" type="debug"/>
+      <xs:element name="advanced" type="advanced"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="jvm-general">
+    <xs:sequence/>
+    <xs:attribute name="server" type="xs:boolean"/>
+  </xs:complexType>
+
+  <xs:complexType name="memory">
+    <xs:sequence/>
+    <xs:attribute name="max-new-size" type="xs:long"/>
+    <xs:attribute name="max-perm-size" type="xs:long"/>
+    <xs:attribute name="ms" type="xs:long"/>
+    <xs:attribute name="mx" type="xs:long"/>
+    <xs:attribute name="new-size" type="xs:long"/>
+    <xs:attribute name="perm-size" type="xs:long"/>
+    <xs:attribute name="ss" type="xs:long"/>
+  </xs:complexType>
+
+  <xs:complexType name="garbage-collection">
+    <xs:sequence/>
+    <xs:attribute name="max-gc-minor-pause-millis" type="xs:long"/>
+    <xs:attribute name="max-gc-pause-millis" type="xs:long"/>
+  </xs:complexType>
+
+  <xs:complexType name="debug">
+    <xs:sequence/>
+    <xs:attribute name="heap-hump-on-out-of-memory-error" type="xs:boolean"/>
+    <xs:attribute name="loggc" type="xs:string"/>
+    <xs:attribute name="print-gc" type="xs:boolean"/>
+    <xs:attribute name="print-gc-application-stopped-time" type="xs:boolean"/>
+    <xs:attribute name="print-gc-details" type="xs:boolean"/>
+    <xs:attribute name="print-gc-time-stamps" type="xs:boolean"/>
+    <xs:attribute name="print-heap-at-gc" type="xs:boolean"/>
+  </xs:complexType>
+
+  <xs:complexType name="advanced">
+    <xs:sequence/>
+    <xs:attribute name="cli-args" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="context-container">
+    <xs:sequence>
+      <xs:element name="static-resource-cache" type="static-resource-cache"/>
+      <xs:element name="web-application-logger" type="web-application-logger"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="static-resource-cache">
+    <xs:sequence/>
+    <xs:attribute name="cache-max-size" type="xs:long"/>
+    <xs:attribute name="cache-ttl" type="xs:long"/>
+    <xs:attribute name="caching-allowed" type="xs:boolean"/>
+  </xs:complexType>
+
+  <xs:complexType name="web-application-logger">
+    <xs:sequence/>
+    <xs:attribute name="swallow-output" type="xs:boolean"/>
+  </xs:complexType>
+
+  <xs:complexType name="server-defaults">
+    <xs:sequence>
+      <xs:element name="jsp-defaults" type="jsp-defaults"/>
+      <xs:element name="static-defaults" type="static-defaults"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="jsp-defaults">
+    <xs:sequence/>
+    <xs:attribute name="check-interval" type="xs:long"/>
+    <xs:attribute name="classdebuginfo" type="xs:boolean"/>
+    <xs:attribute name="compiler" type="xs:string"/>
+    <xs:attribute name="compiler-source-vm" type="xs:string"/>
+    <xs:attribute name="compiler-target-vm" type="xs:string"/>
+    <xs:attribute name="development" type="xs:boolean"/>
+    <xs:attribute name="display-source-fragment" type="xs:boolean"/>
+    <xs:attribute name="dump-smap" type="xs:boolean"/>
+    <xs:attribute name="enable-pooling" type="xs:boolean"/>
+    <xs:attribute name="engine-options-class" type="xs:string"/>
+    <xs:attribute name="error-on-use-bean-invalid-class-attribute" type="xs:boolean"/>
+    <xs:attribute name="fork" type="xs:boolean"/>
+    <xs:attribute name="gen-str-as-char-array" type="xs:boolean"/>
+    <xs:attribute name="ie-class-id" type="xs:string"/>
+    <xs:attribute name="java-encoding" type="xs:string"/>
+    <xs:attribute name="keepgenerated" type="xs:boolean"/>
+    <xs:attribute name="mappedfile" type="xs:boolean"/>
+    <xs:attribute name="modification-test-interval" type="xs:long"/>
+    <xs:attribute name="scratchdir" type="xs:string"/>
+    <xs:attribute name="suppress-smap" type="xs:boolean"/>
+    <xs:attribute name="trim-spaces" type="xs:boolean"/>
+    <xs:attribute name="xpowered-by" type="xs:boolean"/>
+  </xs:complexType>
+
+  <xs:complexType name="static-defaults">
+    <xs:sequence/>
+    <xs:attribute name="debug" type="xs:long"/>
+    <xs:attribute name="file-encoding" type="xs:string"/>
+    <xs:attribute name="input" type="xs:long"/>
+    <xs:attribute name="listings" type="xs:boolean"/>
+    <xs:attribute name="output" type="xs:long"/>
+    <xs:attribute name="readme-file" type="xs:string"/>
+    <xs:attribute name="readonly" type="xs:boolean"/>
+    <xs:attribute name="sendfile-size" type="xs:long"/>
+  </xs:complexType>
+
+  <xs:complexType name="data-source" abstract="true">
+    <xs:sequence>
+      <xs:element name="jdbc-general" type="jdbc-general"/>
+      <xs:element name="connection" type="connection"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="jdbc-general">
+    <xs:sequence/>
+    <xs:attribute name="jndi-name" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="connection">
+    <xs:sequence/>
+    <xs:attribute name="connection-properties" type="xs:string"/>
+    <xs:attribute name="driver-class-name" type="xs:string" use="required"/>
+    <xs:attribute name="password" type="xs:string" use="required"/>
+    <xs:attribute name="url" type="xs:string" use="required"/>
+    <xs:attribute name="username" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="service">
+    <xs:sequence>
+      <xs:element name="connectors">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="connector" type="connector" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="engine" type="engine"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="connector" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="address" type="xs:string"/>
+    <xs:attribute name="connection-timeout" type="xs:long"/>
+    <xs:attribute name="max-threads" type="xs:long"/>
+    <xs:attribute name="port" type="xs:long" use="required"/>
+    <xs:attribute name="proxy-name" type="xs:string"/>
+    <xs:attribute name="proxy-port" type="xs:long"/>
+    <xs:attribute name="redirect-port" type="xs:long"/>
+    <xs:attribute name="scheme" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="engine">
+    <xs:sequence>
+      <xs:element name="hosts">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="host" type="host" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="thread-diagnostics" type="threadDiagnostics"/>
+      <xs:element name="logging" type="logging"/>
+    </xs:sequence>
+    <xs:attribute name="default-host" type="xs:string" use="required"/>
+    <xs:attribute name="jvm-route" type="xs:string"/>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="host">
+    <xs:sequence>
+      <xs:element name="logging" type="logging" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="app-base" type="xs:string" use="required"/>
+    <xs:attribute name="auto-deploy" type="xs:boolean"/>
+    <xs:attribute name="deploy-on-startup" type="xs:boolean"/>
+    <xs:attribute name="deploy-xml" type="xs:boolean"/>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="unpack-wars" type="xs:boolean"/>
+    <xs:attribute name="work-dir" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="logging">
+    <xs:sequence/>
+    <xs:attribute name="directory" type="xs:string"/>
+    <xs:attribute name="enabled" type="xs:boolean" use="required"/>
+    <xs:attribute name="file-date-format" type="xs:string"/>
+    <xs:attribute name="pattern" type="xs:string"/>
+    <xs:attribute name="prefix" type="xs:string"/>
+    <xs:attribute name="suffix" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="threadDiagnostics">
+    <xs:sequence/>
+    <xs:attribute name="enabled" type="xs:boolean" use="required"/>
+    <xs:attribute name="history" type="xs:long"/>
+    <xs:attribute name="threshold" type="xs:long"/>
+  </xs:complexType>
+
+  <xs:complexType name="tomcat-data-source">
+    <xs:complexContent>
+      <xs:extension base="data-source">
+        <xs:sequence>
+          <xs:element name="connection-pool" type="tomcat-connection-pool"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="tomcat-connection-pool">
+    <xs:complexContent>
+      <xs:extension base="connection-pool">
+        <xs:sequence/>
+        <xs:attribute name="default-auto-commit" type="xs:boolean"/>
+        <xs:attribute name="default-catalog" type="xs:string"/>
+        <xs:attribute name="default-read-only" type="xs:boolean"/>
+        <xs:attribute name="default-transaction-isolation" type="xs:string"/>
+        <xs:attribute name="fair-queue" type="xs:boolean"/>
+        <xs:attribute name="init-sql" type="xs:string"/>
+        <xs:attribute name="initial-size" type="xs:long"/>
+        <xs:attribute name="jdbc-interceptors" type="xs:string"/>
+        <xs:attribute name="jmx-enabled" type="xs:boolean"/>
+        <xs:attribute name="log-abandoned" type="xs:boolean"/>
+        <xs:attribute name="max-active" type="xs:long"/>
+        <xs:attribute name="max-idle" type="xs:long"/>
+        <xs:attribute name="max-wait" type="xs:long"/>
+        <xs:attribute name="min-evictable-idle-time-millis" type="xs:long"/>
+        <xs:attribute name="min-idle" type="xs:long"/>
+        <xs:attribute name="remove-abandoned" type="xs:boolean"/>
+        <xs:attribute name="remove-abandoned-timeout" type="xs:long"/>
+        <xs:attribute name="test-on-borrow" type="xs:boolean"/>
+        <xs:attribute name="test-on-return" type="xs:boolean"/>
+        <xs:attribute name="test-while-idle" type="xs:boolean"/>
+        <xs:attribute name="time-between-eviction-runs-millis" type="xs:long"/>
+        <xs:attribute name="use-equals" type="xs:boolean"/>
+        <xs:attribute name="validation-interval" type="xs:long"/>
+        <xs:attribute name="validation-query" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="connection-pool" abstract="true">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="dbcp-data-source">
+    <xs:complexContent>
+      <xs:extension base="data-source">
+        <xs:sequence>
+          <xs:element name="connection-pool" type="dbcp-connection-pool"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="dbcp-connection-pool">
+    <xs:complexContent>
+      <xs:extension base="connection-pool">
+        <xs:sequence/>
+        <xs:attribute name="access-to-underlying-connection-allowed" type="xs:boolean"/>
+        <xs:attribute name="default-auto-commit" type="xs:boolean"/>
+        <xs:attribute name="default-catalog" type="xs:string"/>
+        <xs:attribute name="default-read-only" type="xs:boolean"/>
+        <xs:attribute name="default-transaction-isolation" type="xs:string"/>
+        <xs:attribute name="initial-size" type="xs:long"/>
+        <xs:attribute name="log-abandoned" type="xs:boolean"/>
+        <xs:attribute name="max-active" type="xs:long"/>
+        <xs:attribute name="max-idle" type="xs:long"/>
+        <xs:attribute name="max-open-prepared-statements" type="xs:long"/>
+        <xs:attribute name="max-wait" type="xs:long"/>
+        <xs:attribute name="min-evictable-idle-time-millis" type="xs:long"/>
+        <xs:attribute name="min-idle" type="xs:long"/>
+        <xs:attribute name="num-tests-per-eviction-run" type="xs:long"/>
+        <xs:attribute name="pool-prepared-statements" type="xs:boolean"/>
+        <xs:attribute name="remove-abandoned" type="xs:boolean"/>
+        <xs:attribute name="remove-abandoned-timeout" type="xs:long"/>
+        <xs:attribute name="test-on-borrow" type="xs:boolean"/>
+        <xs:attribute name="test-on-return" type="xs:boolean"/>
+        <xs:attribute name="test-while-idle" type="xs:boolean"/>
+        <xs:attribute name="time-between-eviction-runs-millis" type="xs:long"/>
+        <xs:attribute name="validation-query" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ajp-connector">
+    <xs:complexContent>
+      <xs:extension base="connector">
+        <xs:sequence/>
+        <xs:attribute name="protocol" type="xs:string"/>
+        <xs:attribute name="request-secret" type="xs:string"/>
+        <xs:attribute name="request-use-secret" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="http-connector">
+    <xs:complexContent>
+      <xs:extension base="connector">
+        <xs:sequence/>
+        <xs:attribute name="accept-count" type="xs:long"/>
+        <xs:attribute name="algorithm" type="xs:string"/>
+        <xs:attribute name="key-alias" type="xs:string"/>
+        <xs:attribute name="keystore-file" type="xs:string"/>
+        <xs:attribute name="keystore-pass" type="xs:string"/>
+        <xs:attribute name="max-keep-alive-requests" type="xs:long"/>
+        <xs:attribute name="protocol" type="xs:string"/>
+        <xs:attribute name="ssl-ca-certificate-file" type="xs:string"/>
+        <xs:attribute name="ssl-ca-certificate-path" type="xs:string"/>
+        <xs:attribute name="ssl-ca-revocation-file" type="xs:string"/>
+        <xs:attribute name="ssl-ca-revocation-path" type="xs:string"/>
+        <xs:attribute name="ssl-certificate-chain-file" type="xs:string"/>
+        <xs:attribute name="ssl-certificate-file" type="xs:string"/>
+        <xs:attribute name="ssl-certificate-key-file" type="xs:string"/>
+        <xs:attribute name="ssl-cipher-suite" type="xs:string"/>
+        <xs:attribute name="ssl-enabled" type="xs:boolean"/>
+        <xs:attribute name="ssl-password" type="xs:string"/>
+        <xs:attribute name="ssl-protocol" type="xs:string"/>
+        <xs:attribute name="ssl-verify-client" type="xs:string"/>
+        <xs:attribute name="ssl-verify-depth" type="xs:long"/>
+        <xs:attribute name="secure" type="xs:boolean"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+</xs:schema>

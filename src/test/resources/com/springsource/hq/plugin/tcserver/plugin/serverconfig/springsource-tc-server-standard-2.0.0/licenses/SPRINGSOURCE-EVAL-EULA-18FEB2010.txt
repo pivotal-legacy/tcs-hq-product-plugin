@@ -1,0 +1,50 @@
+VMWARE EVALUATION LICENSE AGREEMENT
+
+NOTICE:  BY DOWNLOADING AND INSTALLING, COPYING OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS OF THIS VMWARE EVALUATION LICENSE AGREEMENT ("AGREEMENT").  IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, YOU MAY NOT DOWNLOAD, INSTALL, COPY OR USE THE SOFTWARE.  "YOU" MEANS THE NATURAL PERSON OR THE ENTITY THAT IS AGREEING TO BE BOUND BY THIS AGREEMENT, THEIR EMPLOYEES AND THIRD PARTY CONTRACTORS THAT PROVIDE SERVICES TO YOU.  YOU SHALL BE LIABLE FOR ANY FAILURE BY SUCH EMPLOYEES AND THIRD PARTY CONTRACTORS TO COMPLY WITH THE TERMS OF THIS AGREEMENT.
+
+
+1.	GRANT AND USE RIGHTS FOR SOFTWARE.
+
+1.1	License.  This Agreement grants You a limited, non-transferable, non-exclusive, limited right to use one copy of the Software in object code form for the sole purpose of evaluating the Software for purchase. "Software" means software products that are licensed to you under this Agreement, including, but not limited to, any related components provided with the Software, application programming interfaces, associated media, printed materials, online or electronic documentation, and any updates and maintenance releases thereto. Open source software components provided with the Software are licensed to you under the terms of the applicable license agreements included with such open source software components.  The open source software licenses can be found in the open_source_licenses.txt file, other materials accompanying the Software, the documentation or corresponding source files available at http://www.vmware.com/download/open_source.html.
+
+1.2	License Limitations.  You may not copy the Software or remove any titles, trademarks or trade names, copyright notices, legends, or other proprietary markings on the Software.  You are not granted any rights to any trademarks or service marks of VMware.  VMware retains all rights not expressly granted to you in this Agreement.
+
+1.3	Restrictions.  You may not (i) use the Software for general production use, (ii) sell, lease, license, sublicense, distribute or otherwise transfer in whole or in part the Software to another party; (iii) provide, disclose, divulge or make available to, or permit use of the Software in whole or in part by, any third party without VMware's prior written consent; (iv) modify or create derivative works based upon the Software; or (v) create, develop, license, install, use, or deploy any third party software or services to circumvent, enable, modify or provide access, permissions or rights which violate the technical restrictions of the Software, any additional licensing terms provided by VMware via product documentation, notification, and/or policy change posted at http://www.vmware.com, and the terms of this Agreement.  Except to the extent expressly permitted by applicable law, and to the extent that VMware is not permitted by that applicable law to exclude or limit the following rights, you may not decompile, disassemble, reverse engineer, or otherwise attempt to derive source code from the Software, in whole or in part. Before you exercise any rights that you believe to be entitled to based on mandatory law, you provide VMware with 30 days prior written notice at info@vmware.com and provide all reasonably requested information to allow VMware to assess your claim and, at VMware's sole discretion, to provide alternatives that reduce any adverse impact on VMware's intellectual property or other rights. You may use the Software to conduct internal performance testing and benchmarking studies, the results of which you (and not unauthorized third parties) may publish or publicly disseminate; provided that VMware has reviewed and approved of the methodology, assumptions and other parameters of the study.  Please contact VMware at benchmark@vmware.com to request such review. 	
+
+2.	TITLE.  VMware retains all right, title, and interest in and to the Software and in all related copyrights, trade secrets, patents, trademarks, and any other intellectual and industrial property and proprietary rights, including registrations, applications, renewals, and extensions of such rights.
+
+3.	SUPPORT AND SUBSCRIPTION SERVICES NOT INCLUDED
+
+VMware will not provide any support services under this Agreement. This Agreement does not give you any rights to any updates or upgrades to the Software or to any extensions or enhancements to the Software developed by VMware at any time in the future. VMware may use any technical information you provide to VMware for any VMware business purposes without restriction, including for product support and development. VMware will not use information in a form that personally identifies you.
+
+4.	TERM AND TERMINATION
+
+4.1	Term and Termination.  Unless earlier terminated in accordance with this Agreement, this Agreement shall terminate upon expiration of the applicable trial period after You download the Software. VMware may terminate this Agreement immediately and without notice if you fail to comply with any term of this Agreement.
+  
+4.2	Effect of Termination.  Upon expiration or termination of this Agreement for any reason, any right, license or permission granted to You with respect to the Software shall immediately terminate and You shall: (i) immediately cease use of the Software, in whole or in part; and (ii) fully destroy, delete and/or uninstall any copy of the Software installed or copied by You. The provisions regarding confidentiality, ownership, exclusion of warranty, limitation of liability, and the general provisions in Section 9 will survive termination or expiration of this License.
+
+5.	EXCLUSION OF WARRANTY AND LIMITATION OF LIABILITY
+
+5.1	EXCLUSION OF WARRANTY. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE MANDATORY LAW, VMWARE AND ITS LICENSORS PROVIDE THE SOFTWARE WITHOUT ANY WARRANTIES OF ANY KIND, EXPRESS, IMPLIED, STATUTORY, OR IN ANY OTHER PROVISION OF THIS AGREEMENT OR COMMUNICATION WITH YOU, AND VMWARE AND ITS LICENSORS SPECIFICALLY DISCLAIM ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+5.2	LIMITATION OF LIABILITY. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE MANDATORY LAW, IN NO EVENT WILL VMWARE AND ITS LICENSORS BE LIABLE FOR ANY LOST PROFITS OR BUSINESS OPPORTUNITIES, LOSS OF USE, BUSINESS INTERRUPTION, LOSS OF DATA, OR ANY OTHER INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES UNDER ANY THEORY OF LIABILITY, WHETHER BASED IN CONTRACT, TORT, NEGLIGENCE, PRODUCT LIABILITY, OR OTHERWISE.  BECAUSE SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE PRECEDING LIMITATION MAY NOT APPLY TO YOU.  VMWARE AND ITS LICENSORS' LIABILITY UNDER THIS AGREEMENT WILL NOT, IN ANY EVENT, EXCEED THE LICENSE FEES, IF ANY, PAID BY YOU FOR THE SOFTWARE LICENSED TO YOU UNDER THIS AGREEMENT. THE FOREGOING LIMITATIONS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, REGARDLESS OF WHETHER VMWARE OR ITS LICENSORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND REGARDLESS OF WHETHER ANY REMEDY FAILS OF ITS ESSENTIAL PURPOSE. 
+
+6.	GENERAL
+
+6.1    Entire Agreement. This Agreement sets forth VMware's entire liability and your exclusive remedy with respect to the Software and supersedes the terms of any communications or advertising with respect to the Software. You acknowledge that this Agreement is a complete statement of the agreement between you and VMware with respect to the Software, and that there are no other prior or contemporaneous understandings, promises, representations, or descriptions with respect to the Software.  
+
+6.2	Headings. Headings under this Agreement are intended only for convenience and shall not affect the interpretation of this Agreement.
+
+6.3	Waiver and Modification.  No failure of either party to exercise or enforce any of its rights under this Agreement will act as a waiver of those rights.  This Agreement may only be modified, or any rights under it waived, by a written document executed by the party against which it is asserted.
+
+6.4	Severability.  If any provision of this Agreement is found illegal or unenforceable, it will be enforced to the maximum extent permissible, and the legality and enforceability of the other provisions of this Agreement will not be affected.
+
+6.5	Governing Law.  This Agreement will be governed by California law and the United States of America, without regard to its choice of law principles. The United Nations Convention for the International Sale of Goods shall not apply.
+
+6.6	Government Restrictions.  You may not export or re-export the Software except in compliance with the United States Export Administration Act and the related rules and regulations and similar non-U.S. government restrictions, if applicable.  The Software and accompanying documentation are deemed to be "commercial computer software" and "commercial computer software documentation," respectively, pursuant to DFAR Section 227.7202 and FAR Section 12.212(b), as applicable.  Any use, modification, reproduction, release, performing, displaying, or disclosing of the Software by the U.S. Government shall be governed solely by the terms of this Agreement.
+
+6.7	Contact Information.  If you have any questions about this Agreement, or if you want to contact VMware for any reason, please direct all correspondence to: VMware, Inc., 3401 Hillview Avenue, Palo Alto, CA 94304, United States of America or email info@vmware.com.
+
+6.8	Other. VMware and VMTN are trademarks and/or registered trademarks of VMware, Inc. in the United States and/or various jurisdictions.  
+
+

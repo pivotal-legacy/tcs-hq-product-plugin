@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Server port="${shutdown.port}" shutdown="SHUTDOWN">
+
+  <Listener className="org.apache.catalina.core.JasperListener" />
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+  <Listener className="org.apache.catalina.mbeans.ServerLifecycleListener" />
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+
+  <Listener className="com.springsource.tcserver.serviceability.rmi.JmxSocketListener"
+            port="${jmx.port}"
+            bind="127.0.0.1" 
+            useSSL="false" 
+            passwordFile="${catalina.base}/conf/jmxremote.password"
+            accessFile="${catalina.base}/conf/jmxremote.access" 
+            authenticate="true"/>
+
+  <Listener className="com.springsource.tcserver.serviceability.deploy.TcContainerDeployer" />
+
+  <GlobalNamingResources>
+    <Resource name="UserDatabase" auth="Container"
+              type="org.apache.catalina.UserDatabase"
+              description="User database that can be updated and saved"
+              factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+              pathname="conf/tomcat-users.xml" />
+  </GlobalNamingResources>
+
+  <Service name="Catalina">
+  
+    <Executor name="tomcatThreadPool" namePrefix="tomcat-http--" maxThreads="300" minSpareThreads="50"/>
+
+    <Connector executor="tomcatThreadPool"
+               port="${http.port}" 
+               protocol="HTTP/1.1" 
+               connectionTimeout="20000" 
+               redirectPort="${https.port}" 
+               acceptCount="100"
+               maxKeepAliveRequests="15"/>
+
+    <Engine name="Catalina" defaultHost="localhost" jvmRoute="${tcserver.node}">
+
+      <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"
+               channelSendOptions="8">
+
+        <Manager className="org.apache.catalina.ha.session.DeltaManager"
+                 expireSessionsOnShutdown="false"
+                 notifyListenersOnReplication="true"/>
+
+        <Channel className="org.apache.catalina.tribes.group.GroupChannel">
+          <Membership className="org.apache.catalina.tribes.membership.McastService"
+                      address="228.0.0.4"
+                      port="45564"
+                      frequency="500"
+                      dropTime="3000"/>
+          <Receiver className="org.apache.catalina.tribes.transport.nio.NioReceiver"
+                    address="auto"
+                    port="4000"
+                    autoBind="100"
+                    selectorTimeout="5000"
+                    maxThreads="6"/>
+
+          <Sender className="org.apache.catalina.tribes.transport.ReplicationTransmitter">
+            <Transport className="org.apache.catalina.tribes.transport.nio.PooledParallelSender"/>
+          </Sender>
+          <Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpFailureDetector"/>
+          <Interceptor className="org.apache.catalina.tribes.group.interceptors.MessageDispatch15Interceptor"/>
+        </Channel>
+
+        <Valve className="org.apache.catalina.ha.tcp.ReplicationValve"
+               filter=""/>
+        <Valve className="org.apache.catalina.ha.session.JvmRouteBinderValve"/>
+
+        <ClusterListener className="org.apache.catalina.ha.session.JvmRouteSessionIDBinderListener"/>
+        <ClusterListener className="org.apache.catalina.ha.session.ClusterSessionListener"/>
+      </Cluster>  
+        
+      <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+             resourceName="UserDatabase"/>
+
+      <Host name="localhost"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true" deployOnStartup="true" deployXML="true" 
+            xmlValidation="false" xmlNamespaceAware="false">
+      </Host>
+    </Engine>
+  </Service>
+</Server>

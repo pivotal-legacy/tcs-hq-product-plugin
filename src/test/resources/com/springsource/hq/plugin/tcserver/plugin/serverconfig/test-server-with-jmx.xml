@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- xml comments -->
+<Server port="4323" shutdown="GOAWAY">
+<!-- Here are some comments -->
+  <Listener className="org.apache.catalina.core.JasperListener" />
+  <Listener className="org.apache.catalina.mbeans.ServerLifecycleListener" />
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+
+  <Listener className="com.springsource.tcserver.serviceability.ServiceabilityLifecycleListener"
+            deadlockCheckInterval="60"
+            dumpDir="${catalina.base}/logs"
+            stackTraceDepth="120"/>
+  <Listener accessFile="${catalina.base}/conf/jmxremote.access"
+        authenticate="true" bind="192.2.2.200"
+        className="com.springsource.tcserver.serviceability.rmi.JmxSocketListener"
+        passwordFile="${catalina.base}/conf/jmxremote.password"
+        port="7002" useSSL="false"/>
+  <GlobalNamingResources>
+    <Resource name="UserDatabase" auth="Container"
+              type="org.apache.catalina.UserDatabase"
+              description="User database that can be updated and saved"
+              factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+              pathname="conf/tomcat-users.xml" />
+   <Resource name="jdbc/EmployeeDB"
+            auth="Container"
+            type="javax.sql.DataSource"
+            username="dbusername"
+            password="dbpassword"
+            driverClassName="org.hsql.jdbcDriver"
+            url="jdbc:HypersonicSQL:database"
+            maxActive="8"
+            maxIdle="4"/>             
+  </GlobalNamingResources>
+
+  <Service name="Catalina">
+  
+    <Executor name="tomcatThreadPool" namePrefix="tomcat-http--" maxThreads="300" minSpareThreads="50"/>
+
+    <Connector 
+               executor="tomcatThreadPool"
+               port="8080" 
+               protocol="HTTP/1.1" 
+               connectionTimeout="20000" 
+               redirectPort="8443" 
+               acceptCount="100"
+               maxKeepAliveRequests="15"/>
+
+    <Engine name="Catalina" defaultHost="localhost">
+<!-- Here are some more comments -->
+      <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+             resourceName="UserDatabase"/>
+
+      <Host name="localhost"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true" deployOnStartup="true" deployXML="true" 
+            xmlValidation="false" xmlNamespaceAware="false">
+      </Host>
+    </Engine>
+  </Service>
+</Server>

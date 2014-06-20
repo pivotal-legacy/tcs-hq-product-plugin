@@ -1,0 +1,99 @@
+tc Server documentation link:
+http://static.springsource.com/projects/tc-server/2.0/index.html 
+
+tc Server Known Issues List can be found at:
+http://static.springsource.com/projects/tc-server/2.0/getting-started/html/ch03s02.html
+
+tc Server Supported configurations can be found at:
+http://static.springsource.com/projects/tc-server/2.0/getting-started/html/ch02s03.html
+
+Note that are often certified after a GA release, please refer back to this page and watch the tc Server Announcement Forum found at:
+http://forum.springsource.org/forumdisplay.php?f=63
+for additional supported configuration information.
+
+Spring Insight Application Performance Forum can be found at:
+http://forum.springsource.org/forumdisplay.php?f=71
+
+---------------------------------------------------------------------------------------------------------------------
+
+2010-March: 2.0.0.RELEASE: General Availability Release
+Overview: Spring Insight, Hyperic HQ 4.2 Integration, Product Maintenance
+tc Server Version: 2.0.0.RELEASE
+tc Runtime Version: 6.0.25.A
+tc Server HQ Plug-In Version: 2.0.0.RELEASE
+Hyperic HQ Version: 4.2.0.6
+Spring Insight Version: 1.0.0.M2
+
+Overview
+============
+* Major functionality change is the migration from AMS (based on HQ 3.2.5) to off-the-shelf Hyperic HQ 4.2 management and monitoring
+* See http://support.hyperic.com/display/DOC/HQ+4.2+Release+Notes for comprehensive list of improvements in HQ 4.x
+
+* In addition, major version numbering approach being changed to version tc Server as a product bundle independent of components, hence the change from 6.0.20.C to tc Server 2.0.0.RELEASE. Minor releases will increment the 2nd digit, maintenance releases the 3rd, and any service patch releases required will change RELEASE to SR01, SR02, and so on. With each update release, any changing components will update their version numbers accordingly.
+** tc Server Runtime will continue to derive its version number from the ASF Tomcat release
+** tc Server HQ Plug-In will version independently allowing for focused maintenance updates and improvements within the plugin.
+** Hyperic HQ version will reflect the HQ Agent bundled with managed node downloads.
+
+* Beginning with tc Server 2.0.0.RELEASE, the product will be bundled and offered for evaluation and commercial download in the following bundles.
+1. Developer Edition - Licensed for non-expiring personal use by developers. Includes the following components:
+   tc Server - application server and supporting scripts and utilities
+   Spring Insight - Beta version of application developer performance dashboard
+2. Standard Edition (tomcat) - Licensed for 90 day end user evaluation, available for production commercial license. Includes the following components:
+   tc Server - application server and supporting scripts and utilities
+3. Standard Edition (node) - Licensed for 90 day end user evaluation, available for production commercial license. Includes the following components:
+   tc Server - application server and supporting scripts and utilities
+   Hyperic HQ Agent - Management agent to be installed on computer system to be monitored
+   tc Server HQ Plug-In - HQ plug-in enabling advanced tc Server management, monitoring and configuration
+
+* In addition, for the convenience of tc Server users new to Hyperic HQ, a customized evaluation use licensed version of the HQ 4.2 Server will be provided for download on the tc Server evaluation and commercial download sites.
+
+* Note that a detailed changelog for Apache Tomcat 6.0 is maintained by the Apache Software Foundation at http://tomcat.apache.org/tomcat-6.0-doc/changelog.html, that is the authoritative source for changes in Apache Tomcat. In certain cases, issues identified by SpringSource have been captured internally and submitted back to ASF for inclusion in Tomcat. Any reference to issues resolved in the Apache Tomcat source tree below should be considered references only, with the Apache changelog and source tree being the authoritative source for changes.
+
+Following is a finer grained review of new features, product improvements and resolved issues being delivered in this release.
+
+New Features
+============
+* TCSRV-850: As a user, I can apply out-of-the box "templates" for stereotyped Tomcat configuration. A number of typical Tomcat configurations previously applied via sample configuration files, are now available as full templates.
+* TCSRV-1002: Provide integrated management, monitoring and configuration of tc Server via the HQ 4.2 Server
+* TCSRV-1031: Include ASF manager app with developer template and enable/test use of standard Maven Tomcat plugin with tc Server
+* TCSRV-1134: Provide zip and tar format packages suitable for direct unpacking on target systems, both for application server and full node downloads.
+
+Product Improvements
+====================
+* TCSRV-771: Improve instance specific control scripts to use relative path to base installation rather than fixed full path, making instances relocatable.
+* TCSRV-774: Expose INSTANCE_NAME to setenv.sh/.bat scripts
+* TCSRV-783: Improve tcserver-instance.* -l, --list option to pick up instances not located under <tcserver_install>/tcServer-2.0 directory.
+* TCSRV-851: As a user, I can choose to restart my server when deploying an application to avoid typical hot deploy errors such as running out of PermGen space.
+* TCSRV-924: Added ability to revert one level back on saved configuration changes.
+* TCSRV-946: Add ability to refresh server configuration in UI at any time
+* TCSRV-949: Improve the layout of the Application Management screen
+* TCSRV-994: Enable redirection of catalina.out log file through setting of CATALINA_OUT environment variable. Fixed in ASF 6.0.21.
+* TCSRV-1014: expose instance name as INSTANCE_NAME variable
+* TCSRV-1026: Allow instances to be moved without change to different directory locations.
+* TCSRV-1070: Add support for https.port to instance creation scripts
+* TCSRV-1095: tcserver-ctl.sh setting INSTANCE_NAME should check for trailing path separator and remove if necessary
+* TCSRV-1106: Make wrapper.conf/ntservice.name dynamic, based on INSTANCE_NAME
+* TCSRV-1107: Set Java location for instance from JAVA_HOME environment variable if tcserver-instance -j option is specified without an argument.
+* TCSRV-1251 Configurable wrapper around Oracle connection pool
+
+Resolved Issues
+===============
+* TCSRV-847: Typo in mbeans-descriptors.xml that caused the attribute logExtendedData to not work properly has been corrected.
+* TCSRV-848: upgrading via -m --modifyver leads to java.lang.NoClassDefFoundError: org/apache/juli/logging/LogFactory on windows
+* TCSRV-925: javascript errors encountered when using IE 8 and the single server config application have been resolved.
+* TCSRV-927: When submitting long pages in the single server config section from the bottom of the page, the browsers view port remains at the bottom because of the iframe. When pages load in the iframe, if the top of the iframe is not in the browser's viewport, the page should scroll to make the top of the iframe at the top of the viewport.
+* TCSRV-967: Unable to stop tcserver instance via HQ UI once tcserver resource has been removed and readded manually to the inventory
+* TCSRV-984: NPE at org.apache.juli.FileHandler.closeWriter(FileHandler.java:176) on tcserver restart. Fixed in ASF 6.0.21.
+* TCSRV-1104: unable to start a remote instance from tc server installation area
+* TCSRV-1138: on windows, creating a tcserver-instance outside of the install area, then attempting to start the instance results in ERROR Cannot find "\tcserver-ctl.bat" to execute
+* TCSRV-1144: Some frameworks use instanceof to check the data source type, fixed in ASF Tomcat trunk, expected to be included in 6.0.25 (proposed to 6.0.x).
+* TCSRV-1161: generated instance name appears to be broken on windows when instance is created from a template
+* TCSRV-1164: AprLifecycleListener tries to initialize even if it is not configured in server.xml, expected to be included in 6.0.25 (proposed to 6.0.x)
+* TCSRV-1168: Logs are being buffered, even with bufferSize set to -1, has been corrected. Fixed in Tomcat 6.0.24.
+* TCSRV-1175: tcserver-instance.bat -c -s foo -r is setting JAVA_HOME as well as JRE_HOME
+* TCSRV-1180: Regressions in JSP processing with Tomcat 6.0.24, expected to be fixed in 6.0.25. Interim fix in tc Server.
+* TCSRV-1189: ClassNotFoundException: com.springsource.util.common.SetProvider exception causing server to exit [ AIX 5.3], fixed.
+* TCSRV-1191: Template text that looks like a deferred expression can be mishandled even if EL is ignored. Registered as issue on Apache Tomcat, expected to be included in 6.0.25 from ASF. Fix will be in tc Server in any case.
+* TCSRV-1194: HQ UI field name called "Max Wait Time for Connection Return (ms)" is incorrectly named; should be "Max Wait Time for Connection Borrow" instead
+* TCSRV-1222: java.net.Inet4Address cannot be cast to java.lang.String  error fixed in Tomcat 6.0.24 and 6.0.25
+* TCSRC-1237: using tab complete to complete an instance name is adding '/' to the end of CATALINA_BASE - Issue in Tomcat 6.0.24

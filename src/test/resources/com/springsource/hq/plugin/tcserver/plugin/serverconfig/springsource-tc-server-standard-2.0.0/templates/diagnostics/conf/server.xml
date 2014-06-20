@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Server port="${shutdown.port}" shutdown="SHUTDOWN">
+
+  <Listener className="org.apache.catalina.core.JasperListener" />
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+  <Listener className="org.apache.catalina.mbeans.ServerLifecycleListener" />
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+
+  <Listener className="com.springsource.tcserver.serviceability.rmi.JmxSocketListener"
+            port="${jmx.port}"
+            bind="127.0.0.1" 
+            useSSL="false" 
+            passwordFile="${catalina.base}/conf/jmxremote.password"
+            accessFile="${catalina.base}/conf/jmxremote.access" 
+            authenticate="true"/>
+
+  <Listener className="com.springsource.tcserver.serviceability.deploy.TcContainerDeployer" />
+
+  <GlobalNamingResources>
+    <Resource name="UserDatabase" auth="Container"
+              type="org.apache.catalina.UserDatabase"
+              description="User database that can be updated and saved"
+              factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+              pathname="conf/tomcat-users.xml" />
+              
+    <Resource name="jdbc/TestDB" 
+              factory="com.springsource.tcserver.serviceability.request.DataSourceFactory"
+              auth="Container" 
+              type="javax.sql.DataSource" 
+              username="root" 
+              password="password" 
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/mysql?autoReconnect=true"              
+              testWhileIdle="true"
+              testOnBorrow="true"
+              testOnReturn="false"
+              validationQuery="SELECT 1"
+              validationInterval="30000"
+              timeBetweenEvictionRunsMillis="5000"
+              maxActive="100" 
+              minIdle="10"
+              maxWait="10000" 
+              initialSize="10"
+              removeAbandonedTimeout="60"
+              removeAbandoned="true"
+              logAbandoned="true"
+              minEvictableIdleTimeMillis="30000" 
+              jmxEnabled="true"
+              jdbcInterceptors="ConnectionState;StatementFinalizer;SlowQueryReportJmx(threshold=10000)"/>
+  </GlobalNamingResources>
+ 
+  <Service name="Catalina">
+  
+    <Executor name="tomcatThreadPool" namePrefix="tomcat-http--" maxThreads="300" minSpareThreads="50"/>
+
+    <Connector executor="tomcatThreadPool"
+               port="${http.port}" 
+               protocol="HTTP/1.1" 
+               connectionTimeout="20000" 
+               redirectPort="${https.port}" 
+               acceptCount="100"
+               maxKeepAliveRequests="15"/>
+
+    <Engine name="Catalina" defaultHost="localhost">
+    
+      <Valve className="com.springsource.tcserver.serviceability.request.ThreadDiagnosticsValve"
+             threshold="10000"
+             notificationInterval="60000"
+             loggingInterval="10000"/>
+
+      <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+             resourceName="UserDatabase"/>
+
+      <Host name="localhost"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true" deployOnStartup="true" deployXML="true" 
+            xmlValidation="false" xmlNamespaceAware="false">
+      </Host>
+    </Engine>
+  </Service>
+</Server>

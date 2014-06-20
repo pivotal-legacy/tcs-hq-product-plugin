@@ -1,0 +1,5 @@
+ALPHA="bravo"
+CHARLIE="delta"
+JVM_OPTS="-Xmx512m -Dalpha=bravo"
+JAVA_OPTS=$ALPHA $CHARLIE $JVM_OPTS
+#JAVA_HOME=""
