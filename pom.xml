@@ -4,7 +4,7 @@
 
   <groupId>com.springsource.hq.plugin.tcserver.plugin</groupId>
   <artifactId>pivotal-tcserver-plugin</artifactId>
-  <version>3.0.0-SNAPSHOT-${buildNumber}</version>
+  <version>3.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>pivotal-tcserver-plugin</name>
@@ -93,26 +93,6 @@
             <filtering>true</filtering>
         </resource>
     </resources>
-    <plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>properties-maven-plugin</artifactId>
-            <version>1.0-alpha-2</version>
-            <executions>
-                <execution>
-                    <phase>initialize</phase>
-                    <goals>
-                        <goal>read-project-properties</goal>
-                    </goals>
-                    <configuration>
-                        <files>
-                            <file>${s3.properties}</file>
-                        </files>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
   </build>
 
   <distributionManagement>
