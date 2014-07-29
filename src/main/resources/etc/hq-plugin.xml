@@ -132,7 +132,7 @@
 
     <server name="Pivotal tc Runtime" version="8.0">
         <property name="EXTENDS" value="Apache Tomcat 8.0" />
-        <property name="VERSION_FILE" value="lib/tcServer.jar" />
+        <property name="VERSION_FILE" value="lib/tcServer3.jar" />
         <property name="DEFAULT_PROGRAM" value="bin/tcruntime-ctl.sh" />
         <plugin type="autoinventory"
             class="com.springsource.hq.plugin.tcserver.plugin.discovery.TcRuntime80Detector" />
