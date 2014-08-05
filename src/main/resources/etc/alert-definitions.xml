@@ -1,135 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AlertDefinitionsResponse>
 	
-<AlertDefinition controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A deadlock has been detected." name="Deadlocks Detected">
-<ResourcePrototype name="SpringSource tc Runtime 6.0"/>
-<AlertCondition thresholdMetric="Deadlocks Detected" type="1" thresholdComparator=">" thresholdValue="0" required="true"/>
-</AlertDefinition>
-
-<AlertDefinition  name="Slow or Failed Request" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A request is taking too long or has failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Thread Diagnostics Context"/>
-<AlertCondition logLevel="ANY" type="7" required="true"/>
-</AlertDefinition>
-
-<AlertDefinition  name="Slow or Failed Request" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A request is taking too long or has failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Thread Diagnostics Engine"/>
-<AlertCondition logLevel="ANY" type="7" required="true"/>
-</AlertDefinition>
-
-<AlertDefinition  name="Slow or Failed Request" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A request is taking too long or has failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Thread Diagnostics Host"/>
-<AlertCondition logLevel="ANY" type="7" required="true"/>
-</AlertDefinition>
-
-<AlertDefinition  name="JDBC Connection Failed" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC connection failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Tomcat JDBC Connection Pool Global"/>
-<AlertCondition logLevel="ANY" type="7" required="true" logMatches="CONNECTION FAILED"/>
-</AlertDefinition>
-
-<AlertDefinition  name="JDBC Connection Abandoned" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC connection was abandoned.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Tomcat JDBC Connection Pool Global"/>
-<AlertCondition logLevel="ANY" type="7" required="true" logMatches="CONNECTION ABANDONED"/>
-</AlertDefinition>
-
-<AlertDefinition  name="Slow JDBC Query" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="Some JDBC queries are taking a long time to execute.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Tomcat JDBC Connection Pool Global"/>
-<AlertCondition logLevel="ANY" type="7" required="true" logMatches="SLOW QUERY"/>
-</AlertDefinition>
-
-<AlertDefinition  name="JDBC Query Failed" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC query failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Tomcat JDBC Connection Pool Global"/>
-<AlertCondition logLevel="ANY" type="7" required="true" logMatches="FAILED QUERY"/>
-</AlertDefinition>
-
-<AlertDefinition  name="JDBC Connection Failed" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC connection failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Tomcat JDBC Connection Pool Context"/>
-<AlertCondition logLevel="ANY" type="7" required="true" logMatches="CONNECTION FAILED"/>
-</AlertDefinition>
-
-<AlertDefinition  name="JDBC Connection Abandoned" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC connection was abandoned.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Tomcat JDBC Connection Pool Context"/>
-<AlertCondition logLevel="ANY" type="7" required="true" logMatches="CONNECTION ABANDONED"/>
-</AlertDefinition>
-
-<AlertDefinition  name="Slow JDBC Query" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="Some JDBC queries are taking a long time to execute.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Tomcat JDBC Connection Pool Context"/>
-<AlertCondition logLevel="ANY" type="7" required="true" logMatches="SLOW QUERY"/>
-</AlertDefinition>
-
-<AlertDefinition  name="JDBC Query Failed" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC query failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 6.0 Tomcat JDBC Connection Pool Context"/>
-<AlertCondition logLevel="ANY" type="7" required="true" logMatches="FAILED QUERY"/>
-</AlertDefinition>
-
-<AlertDefinition controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="2" parent="0" description="Total garbage collection time exceeded 40% of process up time." name="Excessive Time Spent in Garbage Collection">
-<ResourcePrototype name="SpringSource tc Runtime 6.0"/>
-<AlertCondition thresholdMetric="Percent Up Time in Garbage Collection" type="1" thresholdComparator=">" thresholdValue="40" required="true"/>
-</AlertDefinition>
-
-<!-- Alert definitions for tc Runtime 7.0 -->
+<!-- Alert definitions for tc Runtime 8.0 -->
 	
 <AlertDefinition controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A deadlock has been detected." name="Deadlocks Detected">
-<ResourcePrototype name="SpringSource tc Runtime 7.0"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0"/>
 <AlertCondition thresholdMetric="Deadlocks Detected" type="1" thresholdComparator=">" thresholdValue="0" required="true"/>
 </AlertDefinition>
 
 <AlertDefinition  name="Slow or Failed Request" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A request is taking too long or has failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Thread Diagnostics Context"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Thread Diagnostics Context"/>
 <AlertCondition logLevel="ANY" type="7" required="true"/>
 </AlertDefinition>
 
 <AlertDefinition  name="Slow or Failed Request" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A request is taking too long or has failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Thread Diagnostics Engine"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Thread Diagnostics Engine"/>
 <AlertCondition logLevel="ANY" type="7" required="true"/>
 </AlertDefinition>
 
 <AlertDefinition  name="Slow or Failed Request" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A request is taking too long or has failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Thread Diagnostics Host"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Thread Diagnostics Host"/>
 <AlertCondition logLevel="ANY" type="7" required="true"/>
 </AlertDefinition>
 
 <AlertDefinition  name="JDBC Connection Failed" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC connection failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Tomcat JDBC Connection Pool Global"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Tomcat JDBC Connection Pool Global"/>
 <AlertCondition logLevel="ANY" type="7" required="true" logMatches="CONNECTION FAILED"/>
 </AlertDefinition>
 
 <AlertDefinition  name="JDBC Connection Abandoned" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC connection was abandoned.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Tomcat JDBC Connection Pool Global"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Tomcat JDBC Connection Pool Global"/>
 <AlertCondition logLevel="ANY" type="7" required="true" logMatches="CONNECTION ABANDONED"/>
 </AlertDefinition>
 
 <AlertDefinition  name="Slow JDBC Query" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="Some JDBC queries are taking a long time to execute.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Tomcat JDBC Connection Pool Global"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Tomcat JDBC Connection Pool Global"/>
 <AlertCondition logLevel="ANY" type="7" required="true" logMatches="SLOW QUERY"/>
 </AlertDefinition>
 
 <AlertDefinition  name="JDBC Query Failed" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC query failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Tomcat JDBC Connection Pool Global"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Tomcat JDBC Connection Pool Global"/>
 <AlertCondition logLevel="ANY" type="7" required="true" logMatches="FAILED QUERY"/>
 </AlertDefinition>
 
 <AlertDefinition  name="JDBC Connection Failed" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC connection failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Tomcat JDBC Connection Pool Context"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Tomcat JDBC Connection Pool Context"/>
 <AlertCondition logLevel="ANY" type="7" required="true" logMatches="CONNECTION FAILED"/>
 </AlertDefinition>
 
 <AlertDefinition  name="JDBC Connection Abandoned" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC connection was abandoned.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Tomcat JDBC Connection Pool Context"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Tomcat JDBC Connection Pool Context"/>
 <AlertCondition logLevel="ANY" type="7" required="true" logMatches="CONNECTION ABANDONED"/>
 </AlertDefinition>
 
 <AlertDefinition  name="Slow JDBC Query" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="Some JDBC queries are taking a long time to execute.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Tomcat JDBC Connection Pool Context"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Tomcat JDBC Connection Pool Context"/>
 <AlertCondition logLevel="ANY" type="7" required="true" logMatches="SLOW QUERY"/>
 </AlertDefinition>
 
 <AlertDefinition  name="JDBC Query Failed" controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="3" parent="0" description="A JDBC query failed.  Please see the event tracking timeline below the service's indicator charts for more information.">
-<ResourcePrototype name="SpringSource tc Runtime 7.0 Tomcat JDBC Connection Pool Context"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0 Tomcat JDBC Connection Pool Context"/>
 <AlertCondition logLevel="ANY" type="7" required="true" logMatches="FAILED QUERY"/>
 </AlertDefinition>
 
 <AlertDefinition controlFiltered="false" notifyFiltered="false" willRecover="true" range="0" count="0" frequency="0" active="true" priority="2" parent="0" description="Total garbage collection time exceeded 40% of process up time." name="Excessive Time Spent in Garbage Collection">
-<ResourcePrototype name="SpringSource tc Runtime 7.0"/>
+<ResourcePrototype name="Pivotal tc Runtime 8.0"/>
 <AlertCondition thresholdMetric="Percent Up Time in Garbage Collection" type="1" thresholdComparator=">" thresholdValue="40" required="true"/>
 </AlertDefinition>
 
