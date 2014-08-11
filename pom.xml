@@ -2,13 +2,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.springsource.hq.plugin.tcserver.plugin</groupId>
+  <groupId>com.pivotal.hq.plugin.tcserver</groupId>
   <artifactId>pivotal-tcserver-plugin</artifactId>
   <version>3.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>pivotal-tcserver-plugin</name>
-  <url>http://maven.apache.org</url>
+  <url>http://pivotal.io</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -105,7 +105,7 @@
     <repository>
       <id>hyperic-external</id>
       <name>Hyperic External Repository</name>
-      <url>http://maven.hyperic.org/exterma;</url>
+      <url>http://maven.hyperic.org/external</url>
     </repository>
     <repository>
       <id>hyperic-milestone</id>
