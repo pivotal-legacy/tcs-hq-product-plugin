@@ -33,3 +33,7 @@ to undeploy that plugin to install this one.
 Be sure the plugin name is pivotal-tcserver-plugin.jar, otherwise Hyperic may experience an issue deploying the plugin.
 
 Use Plugin Manager to deploy the plugin. 
+
+License
+=======
+This project is licensed under the Apache 2.0 license. See LICENSE and NOTICE for details.
