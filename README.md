@@ -14,7 +14,7 @@ $ mvn clean package
 To publish to a s3 repository:
 $ mvn clean package publish -Ds3.url=<your s3 url>
 
-You will need to configure your ~/.m2/settings.xml with a <server> stanza
+You will need to configure your ~/.m2/settings.xml similar to the following:
 
 ```xml
  <server>
