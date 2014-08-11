@@ -19,7 +19,7 @@ You will need to configure your ~/.m2/settings.xml similar to the following:
 ```xml
  <server>
   <id>s3.release</id>
-  <username>REPLACE_WITH_S3_USERNAME</username>
+  <userphrase>REPLACE_WITH_S3_USERNAME</userphrase>
   <password>REPLACE_WITH_S3_SECRET</password>
  </server>
 ```
