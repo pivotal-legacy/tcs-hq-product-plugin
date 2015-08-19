@@ -1,7 +1,7 @@
 tcs-hq-product-plugin
 =====================
 
-This is the Pivotal tc Server Hyperic monitoring plugin. This version supports Hyperic 5.0+ and tc Server 3.0 or newer.
+This is the Pivotal tc Server Hyperic monitoring plugin for tc Runtime 8.x. This version supports Hyperic 5.0+ and tc Server 3.0 or newer. This will detect and monitor tc Runtime 8+ only.
 
 Build Instructions
 ==================
@@ -36,4 +36,4 @@ Use Plugin Manager to deploy the plugin.
 
 License
 =======
-This project is licensed under the Apache 2.0 license. See LICENSE and NOTICE for details.
+This project is licensed under the GPL v2 license. See LICENSE and NOTICE for details.
