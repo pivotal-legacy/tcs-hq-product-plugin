@@ -120,7 +120,11 @@ public abstract class TcRuntimeDetector extends MxServerDetector {
             Map<String, String> listenerProperties = propertiesRetriever.getPropertiesFromFile(basePath + "/conf/server.xml", "Listener",
                 "className", "com.springsource.tcserver.serviceability.rmi.JmxSocketListener");
             if (!listenerProperties.isEmpty()) {
-                String bindAddressValue = getValueFromPropertiesFile(basePath, listenerProperties.get("bind"));
+                String addressProperty = listenerProperties.get("address");
+                if (addressProperty == null) {
+                    addressProperty = listenerProperties.get("bind");
+                }
+                String bindAddressValue = getValueFromPropertiesFile(basePath, addressProperty);
                 String portValue = getValueFromPropertiesFile(basePath, listenerProperties.get("port"));
                 config.setValue(mxUtil.getJmxUrlProperty(), "service:jmx:rmi:///jndi/rmi://" + bindAddressValue + ":" + portValue + "/jmxrmi");
                 found = true;
