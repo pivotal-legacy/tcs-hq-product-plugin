@@ -136,8 +136,6 @@
         <property name="DEFAULT_PROGRAM" value="bin/tcruntime-ctl.sh" />
         <plugin type="autoinventory"
             class="com.springsource.hq.plugin.tcserver.plugin.discovery.TcRuntime80Detector" />
-        <plugin type="livedata"
-            class="com.springsource.hq.plugin.tcserver.plugin.TomcatLiveDataPlugin" />
         <plugin type="measurement"
             class="com.springsource.hq.plugin.tcserver.plugin.TomcatMeasurementPlugin" />
         <plugin type="control"
