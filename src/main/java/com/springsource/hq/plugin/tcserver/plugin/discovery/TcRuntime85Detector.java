@@ -20,7 +20,7 @@ package com.springsource.hq.plugin.tcserver.plugin.discovery;
 
 import java.io.File;
 
-public final class TcRuntime80Detector extends TcRuntimeDetector {
+public final class TcRuntime85Detector extends TcRuntimeDetector {
 
     @Override
     protected boolean isTcRuntimeInstance(String catalinaHome, String catalinaBase) {
@@ -28,7 +28,7 @@ public final class TcRuntime80Detector extends TcRuntimeDetector {
     }
 
     protected boolean isMyTomcatVersion(String catalinaHome, String catalinaBase) {
-        boolean tomcat8 = new File(catalinaHome, TOMCAT_8_SPECIFIC_JAR).exists() && ! new File(catalinaHome, TOMCAT_85_SPECIFIC_JAR).exists();
-        return tomcat8;
+        boolean tomcat85 = new File(catalinaHome, TOMCAT_85_SPECIFIC_JAR).exists();
+        return tomcat85;
     }
 }

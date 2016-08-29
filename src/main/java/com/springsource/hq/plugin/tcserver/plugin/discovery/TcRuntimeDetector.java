@@ -92,6 +92,8 @@ public abstract class TcRuntimeDetector extends MxServerDetector {
 
     protected static final String TOMCAT_8_SPECIFIC_JAR = "lib/tomcat-websocket.jar";
 
+    protected static final String TOMCAT_85_SPECIFIC_JAR = "lib/jaspic-api.jar";
+
     private static final String DEFAULT_JMX_URL = "service:jmx:rmi:///jndi/rmi://127.0.0.1:6969/jmxrmi";
 
     private final Log logger = LogFactory.getLog(TcRuntimeDetector.class);

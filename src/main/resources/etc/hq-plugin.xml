@@ -131,8 +131,8 @@
 	</metrics>
 
     <server name="Pivotal tc Runtime" version="8.0">
-        <property name="EXTENDS" value="Apache Tomcat 8.0" />
-        <property name="VERSION_FILE" value="lib/tcServer3.jar" />
+        <property name="EXTENDS" value="Apache Tomcat 7.0" />
+        <property name="VERSION_FILE" value="lib/" />
         <property name="DEFAULT_PROGRAM" value="bin/tcruntime-ctl.sh" />
         <plugin type="autoinventory"
             class="com.springsource.hq.plugin.tcserver.plugin.discovery.TcRuntime80Detector" />
@@ -538,8 +538,14 @@
 
     </server>
 
+    <server name="Pivotal tc Runtime" version="8.5" include="Pivotal tc Runtime 8.0">
+        <property name="VERSION_FILE" value="lib/tcServer3.jar" />
+        <plugin type="autoinventory"
+            class="com.springsource.hq.plugin.tcserver.plugin.discovery.TcRuntime85Detector" />
+    </server>
+
 	<!-- ==================== Plugin Help =========================== -->
-	<help name="SpringSource tc Server">
+	<help name="Pivotal tc Server">
 		<![CDATA[
    <p>
   <h3>Configure Pivotal tc Server for JMX</h3>
