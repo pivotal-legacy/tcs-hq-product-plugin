@@ -7,7 +7,7 @@
 GENERAL_JVM_OPTS="-Xmx512m -Xss192k"
 
 # JVM Sun specific settings
-# For a complete list http://blogs.sun.com/watt/resource/jvm-options-list.html
+# For a complete list https://blogs.oracle.com/roller-ui/errors/404.jsp
 #SUN_JVM_OPTS="-XX:MaxPermSize=192m \
 #              -XX:MaxGCPauseMillis=500 \
 #              -XX:+HeapDumpOnOutOfMemoryError"
