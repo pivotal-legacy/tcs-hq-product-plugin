@@ -22,7 +22,7 @@ See the "Getting Started with tc Server" Guide for conceptual information
 about tc Server and its different editions (including this Standard
 Edition), as well as installation and usage instructions:
 
-  http://static.springsource.com/projects/tc-server/2.0/getting-started/html/index.html
+  https://static.springsource.com/projects/tc-server/2.0/getting-started/html/index.html
 
 
 Additional Information
@@ -31,6 +31,6 @@ Additional Information
 See the following links for additional information about the tc Server 
 Standard Edition:
 
-  * Product Information: http://www.springsource.com/products/tcserver
-  * General tc Server Documentation: http://static.springsource.com/projects/tc-server/2.0/index.html
-  * Discussion Forum: http://forum.springsource.org/forumdisplay.php?f=62
+  * Product Information: https://www.springsource.com/products/tcserver
+  * General tc Server Documentation: https://static.springsource.com/projects/tc-server/2.0/index.html
+  * Discussion Forum: https://forum.spring.io/forumdisplay.php?f=62

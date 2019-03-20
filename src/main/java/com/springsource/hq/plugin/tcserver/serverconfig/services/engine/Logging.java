@@ -28,7 +28,7 @@ import com.springsource.hq.plugin.tcserver.serverconfig.BindableAttributes;
 import com.springsource.hq.plugin.tcserver.serverconfig.Hierarchical;
 
 /**
- * Settings for logging valve. (http://tomcat.apache.org/tomcat-6.0-doc/config/valve.html)
+ * Settings for logging valve. (https://tomcat.apache.org/tomcat-6.0-doc/config/valve.html)
  * 
  * <p>
  * Can be used for {@link Host} and {@link Engine} level logging valves.

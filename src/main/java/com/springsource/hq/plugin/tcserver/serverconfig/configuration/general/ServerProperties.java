@@ -30,7 +30,7 @@ import com.springsource.hq.plugin.tcserver.serverconfig.BindableAttributes;
 import com.springsource.hq.plugin.tcserver.serverconfig.Hierarchical;
 
 /**
- * General server properties (http://tomcat.apache.org/tomcat-6.0-doc/config/server.html)
+ * General server properties (https://tomcat.apache.org/tomcat-6.0-doc/config/server.html)
  * 
  * @author Scott Andrews
  * @since 2.0

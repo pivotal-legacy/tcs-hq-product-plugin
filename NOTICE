@@ -116,7 +116,7 @@ of the projects listed below for their contributions.
 The following components are included without modification:
 
 - log4j -
-Information: http://logging.apache.org/
+Information: https://logging.apache.org/
 License: http://www.apache.org/licenses/LICENSE-2.0
 
 The following components are included with modification:
@@ -126,7 +126,7 @@ Information: http://ant-contrib.sourceforge.net/
 License: http://ant-contrib.sourceforge.net/LICENSE.txt
 
 - (portions of) APR -
-Information: http://apr.apache.org/
+Information: https://apr.apache.org/
 License: http://www.apache.org/licenses/LICENSE-2.0
 
 - solaris get_mib2 -
@@ -160,7 +160,7 @@ misrepresented as being the original software.
 
 
 - getline by Chris Thewalt -
-Information: http://tinyurl.com/r438r
+Information: https://tinyurl.com/r438r
 License: within src/sigar_getline.c
 
 
@@ -175,7 +175,7 @@ implied warranty.
  
 
 - PrintfFormat.java -
-Information: http://java.sun.com/developer/technicalArticles/Programming/sprintf/PrintfFormat.java
+Information: https://java.sun.com/developer/technicalArticles/Programming/sprintf/PrintfFormat.java
 License: within bindings/java/src/org/hyperic/sigar/util/PrintfFormat.java
 
 
@@ -431,7 +431,7 @@ available (as would be noted above), you may obtain a copy of
 the source code corresponding to the binaries for such open
 source components and modifications thereto, if any, (the
 "Source Files"), by downloading the Source Files from Pivotal's website at
-http://www.gopivotal.com/open-source, or by sending a request, 
+https://pivotal.io/open-source, or by sending a request, 
 with your name and address to: Pivotal Software, Inc., 3496 Deer Creek Rd, 
 Palo Alto, CA 94304, Attention: General Counsel. All such requests should 
 clearly specify: OPEN SOURCE FILES REQUEST, Attention General Counsel. 

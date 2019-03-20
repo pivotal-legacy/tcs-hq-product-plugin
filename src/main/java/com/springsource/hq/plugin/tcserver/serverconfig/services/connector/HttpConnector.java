@@ -28,7 +28,7 @@ import org.springframework.validation.Validator;
 import com.springsource.hq.plugin.tcserver.serverconfig.BindableAttributes;
 
 /**
- * Settings for HTTP based connectors. (http://tomcat.apache.org/tomcat-6.0-doc/config/http.html)
+ * Settings for HTTP based connectors. (https://tomcat.apache.org/tomcat-6.0-doc/config/http.html)
  * 
  * <p>
  * Java, APR and NIO HTTP connectors are supported. SSL options are supported for Java and APR.

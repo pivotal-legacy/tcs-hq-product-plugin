@@ -28,7 +28,7 @@ import org.springframework.validation.Errors;
 import com.springsource.hq.plugin.tcserver.serverconfig.BindableAttributes;
 
 /**
- * DBCP based connection pool settings. (http://commons.apache.org/dbcp/configuration.html)
+ * DBCP based connection pool settings. (https://commons.apache.org/dbcp/configuration.html)
  * 
  * @author Scott Andrews
  * @since 2.0

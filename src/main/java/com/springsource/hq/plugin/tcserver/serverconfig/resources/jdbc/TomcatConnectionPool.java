@@ -28,7 +28,7 @@ import org.springframework.validation.Errors;
 import com.springsource.hq.plugin.tcserver.serverconfig.BindableAttributes;
 
 /**
- * Tomcat based connection pool settings. (http://people.apache.org/~fhanik/tomcat/jdbc-pool.html)
+ * Tomcat based connection pool settings. (https://people.apache.org/~fhanik/tomcat/jdbc-pool.html)
  * 
  * @author Scott Andrews
  * @since 2.0
