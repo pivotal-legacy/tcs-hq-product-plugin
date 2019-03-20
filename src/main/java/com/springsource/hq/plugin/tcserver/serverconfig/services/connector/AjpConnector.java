@@ -28,7 +28,7 @@ import org.springframework.validation.Validator;
 import com.springsource.hq.plugin.tcserver.serverconfig.BindableAttributes;
 
 /**
- * Settings for AJP based connectors (http://tomcat.apache.org/tomcat-6.0-doc/config/ajp.html)
+ * Settings for AJP based connectors (https://tomcat.apache.org/tomcat-6.0-doc/config/ajp.html)
  * 
  * <p>
  * Java and APR AJP connectors are supported

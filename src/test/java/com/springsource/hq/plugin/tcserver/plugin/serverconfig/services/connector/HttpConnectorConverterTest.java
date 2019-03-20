@@ -166,7 +166,7 @@ public class HttpConnectorConverterTest {
         List<String> http11ProtcolExpectedAttrsList = Arrays.asList(bioExpectedAttrs);
 
         String[] bioSslExpectedAttrs = {
-        /* From the docs (http://tomcat.apache.org/tomcat-6.0-doc/config/http.html#SSL Support) */
+        /* From the docs (https://tomcat.apache.org/tomcat-6.0-doc/config/http.html#SSL Support) */
         "algorithm", "clientAuth", "keystoreFile", "keystorePass", "keystoreType", "keystoreProvider", "sslProtocol", "ciphers", "keyAlias",
             "truststoreFile", "truststorePass", "truststoreType", "truststoreProvider", "sessionCacheSize", "sessionTimeout", "crlFile",
             "allowUnsafeLegacyRenegotiation" };
@@ -193,7 +193,7 @@ public class HttpConnectorConverterTest {
         // TODO: Verify that the protocol attribute = org.apache.coyote.http11.Http11AprProtocol
 
         String[] aprSslExpectedAttrs = {
-        /* From the docs (http://tomcat.apache.org/tomcat-6.0-doc/apr.html#HTTPS) */
+        /* From the docs (https://tomcat.apache.org/tomcat-6.0-doc/apr.html#HTTPS) */
         "SSLEnabled", "SSLProtocol", "SSLCipherSuite", "SSLCertificateFile", /*
                                                                               * The only required attr. This can contain
                                                                               * cert and key, not password encoded, and

@@ -29,7 +29,7 @@ import com.springsource.hq.plugin.tcserver.serverconfig.BindableAttributes;
 import com.springsource.hq.plugin.tcserver.serverconfig.Hierarchical;
 
 /**
- * Settings for JSP defaults (http://svn.apache.org/viewvc/tomcat/tc6.0.x/trunk/conf/web.xml?view=markup)
+ * Settings for JSP defaults (https://svn.apache.org/viewvc/tomcat/tc6.0.x/trunk/conf/web.xml?view=markup)
  * 
  * @author Scott Andrews
  * @since 2.0

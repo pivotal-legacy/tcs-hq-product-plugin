@@ -32,7 +32,7 @@ import com.springsource.hq.plugin.tcserver.serverconfig.Identity;
 import com.springsource.hq.plugin.tcserver.serverconfig.services.Service;
 
 /**
- * Settings for hosts. (http://tomcat.apache.org/tomcat-6.0-doc/config/host.html)
+ * Settings for hosts. (https://tomcat.apache.org/tomcat-6.0-doc/config/host.html)
  * 
  * @author Scott Andrews
  * @since 2.0

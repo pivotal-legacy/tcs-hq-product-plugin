@@ -41,7 +41,7 @@ import com.springsource.hq.plugin.tcserver.serverconfig.services.connector.Conne
 import com.springsource.hq.plugin.tcserver.serverconfig.services.engine.Engine;
 
 /**
- * Holder for service settings. (http://tomcat.apache.org/tomcat-6.0-doc/config/service.html)
+ * Holder for service settings. (https://tomcat.apache.org/tomcat-6.0-doc/config/service.html)
  * 
  * @author Scott Andrews
  * @since 2.0

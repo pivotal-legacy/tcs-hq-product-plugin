@@ -22,7 +22,7 @@
 <%@page import="org.apache.catalina.Session" %>
 <!DOCTYPE html 
      PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+     "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <% String path = (String) request.getAttribute("path");
@@ -122,14 +122,14 @@
 
 <%--div style="display: none;">
 <p>
-	<a href="http://validator.w3.org/check?uri=referer"><img
-		src="http://www.w3.org/Icons/valid-html401"
+	<a href="https://validator.w3.org/check?uri=referer"><img
+		src="https://www.w3.org/Icons/valid-html401"
 		alt="Valid HTML 4.01!" height="31" width="88"></a>
-	<a href="http://validator.w3.org/check?uri=referer"><img
-		src="http://www.w3.org/Icons/valid-xhtml10"
+	<a href="https://validator.w3.org/check?uri=referer"><img
+		src="https://www.w3.org/Icons/valid-xhtml10"
 		alt="Valid XHTML 1.0!" height="31" width="88" /></a>
-	<a href="http://validator.w3.org/check?uri=referer"><img
-		src="http://www.w3.org/Icons/valid-xhtml11"
+	<a href="https://validator.w3.org/check?uri=referer"><img
+		src="https://www.w3.org/Icons/valid-xhtml11"
 		alt="Valid XHTML 1.1!" height="31" width="88" /></a>
 </p>
 </div--%>

@@ -595,7 +595,7 @@ public final class TomcatJmxApplicationManager implements ApplicationManager {
                 // The real solution here is to configure the antiJARLocking and
                 // antiResourceLocking features in tc Runtime's conf/context.xml file.
                 // More info is available here:
-                // http://tomcat.apache.org/tomcat-6.0-doc/config/context.html
+                // https://tomcat.apache.org/tomcat-6.0-doc/config/context.html
 
                 // Number of times to retry the undeploy
                 int numRetries = 3;

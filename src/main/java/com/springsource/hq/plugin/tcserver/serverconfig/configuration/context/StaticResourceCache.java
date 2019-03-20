@@ -29,7 +29,7 @@ import com.springsource.hq.plugin.tcserver.serverconfig.BindableAttributes;
 import com.springsource.hq.plugin.tcserver.serverconfig.Hierarchical;
 
 /**
- * Settings for cacheing of static resources (http://tomcat.apache.org/tomcat-6.0-doc/config/context.html)
+ * Settings for cacheing of static resources (https://tomcat.apache.org/tomcat-6.0-doc/config/context.html)
  * 
  * @author Scott Andrews
  * @since 2.0

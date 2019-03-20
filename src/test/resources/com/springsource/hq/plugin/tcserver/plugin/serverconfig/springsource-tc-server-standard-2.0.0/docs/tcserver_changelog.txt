@@ -1,18 +1,18 @@
 tc Server documentation link:
-http://static.springsource.com/projects/tc-server/2.0/index.html 
+https://static.springsource.com/projects/tc-server/2.0/index.html 
 
 tc Server Known Issues List can be found at:
-http://static.springsource.com/projects/tc-server/2.0/getting-started/html/ch03s02.html
+https://static.springsource.com/projects/tc-server/2.0/getting-started/html/ch03s02.html
 
 tc Server Supported configurations can be found at:
-http://static.springsource.com/projects/tc-server/2.0/getting-started/html/ch02s03.html
+https://static.springsource.com/projects/tc-server/2.0/getting-started/html/ch02s03.html
 
 Note that are often certified after a GA release, please refer back to this page and watch the tc Server Announcement Forum found at:
-http://forum.springsource.org/forumdisplay.php?f=63
+https://forum.spring.io/forumdisplay.php?f=63
 for additional supported configuration information.
 
 Spring Insight Application Performance Forum can be found at:
-http://forum.springsource.org/forumdisplay.php?f=71
+https://forum.spring.io/forumdisplay.php?f=71
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ Spring Insight Version: 1.0.0.M2
 Overview
 ============
 * Major functionality change is the migration from AMS (based on HQ 3.2.5) to off-the-shelf Hyperic HQ 4.2 management and monitoring
-* See http://support.hyperic.com/display/DOC/HQ+4.2+Release+Notes for comprehensive list of improvements in HQ 4.x
+* See https://support.hyperic.com/display/DOC/HQ+4.2+Release+Notes for comprehensive list of improvements in HQ 4.x
 
 * In addition, major version numbering approach being changed to version tc Server as a product bundle independent of components, hence the change from 6.0.20.C to tc Server 2.0.0.RELEASE. Minor releases will increment the 2nd digit, maintenance releases the 3rd, and any service patch releases required will change RELEASE to SR01, SR02, and so on. With each update release, any changing components will update their version numbers accordingly.
 ** tc Server Runtime will continue to derive its version number from the ASF Tomcat release
@@ -47,7 +47,7 @@ Overview
 
 * In addition, for the convenience of tc Server users new to Hyperic HQ, a customized evaluation use licensed version of the HQ 4.2 Server will be provided for download on the tc Server evaluation and commercial download sites.
 
-* Note that a detailed changelog for Apache Tomcat 6.0 is maintained by the Apache Software Foundation at http://tomcat.apache.org/tomcat-6.0-doc/changelog.html, that is the authoritative source for changes in Apache Tomcat. In certain cases, issues identified by SpringSource have been captured internally and submitted back to ASF for inclusion in Tomcat. Any reference to issues resolved in the Apache Tomcat source tree below should be considered references only, with the Apache changelog and source tree being the authoritative source for changes.
+* Note that a detailed changelog for Apache Tomcat 6.0 is maintained by the Apache Software Foundation at https://tomcat.apache.org/tomcat-6.0-doc/changelog.html, that is the authoritative source for changes in Apache Tomcat. In certain cases, issues identified by SpringSource have been captured internally and submitted back to ASF for inclusion in Tomcat. Any reference to issues resolved in the Apache Tomcat source tree below should be considered references only, with the Apache changelog and source tree being the authoritative source for changes.
 
 Following is a finer grained review of new features, product improvements and resolved issues being delivered in this release.
 
