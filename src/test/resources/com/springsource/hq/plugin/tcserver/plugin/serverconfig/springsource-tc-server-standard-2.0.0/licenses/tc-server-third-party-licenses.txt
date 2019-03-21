@@ -294,7 +294,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
  
-http://www.apache.org/licenses/LICENSE-2.0
+https://www.apache.org/licenses/LICENSE-2.0
  
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -595,7 +595,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
   
-http://www.apache.org/licenses/LICENSE-2.0
+https://www.apache.org/licenses/LICENSE-2.0
   
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -657,7 +657,7 @@ Software is licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may
 obtain a copy of the License at:
   
-http://www.apache.org/licenses/LICENSE-2.0
+https://www.apache.org/licenses/LICENSE-2.0
   
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -682,7 +682,7 @@ facility.
  
 Apache License
 Version 2.0, January 2004
-http://www.apache.org/licenses/
+https://www.apache.org/licenses/
 
 
 >>> groovy-1.5.7
@@ -697,7 +697,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
  
-      http://www.apache.org/licenses/LICENSE-2.0
+      https://www.apache.org/licenses/LICENSE-2.0
  
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -751,7 +751,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
  
-http://www.apache.org/licenses/LICENSE-2.0
+https://www.apache.org/licenses/LICENSE-2.0
  
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -887,7 +887,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
  
-     http://www.apache.org/licenses/LICENSE-2.0
+     https://www.apache.org/licenses/LICENSE-2.0
  
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -1506,7 +1506,7 @@ Use of any of this software is governed by the terms of the license below:
 
                                  Apache License
                            Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                        https://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -1698,7 +1698,7 @@ Use of any of this software is governed by the terms of the license below:
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -1979,7 +1979,7 @@ The LGPL2.1 is applicable to the following component(s).
 
 Apache License
 Version 2.0, January 2004
-http://www.apache.org/licenses/
+https://www.apache.org/licenses/
 
 TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -2141,41 +2141,41 @@ Version 1.0
       1. Definitions.
           o
 
-            1.1. “Contributor” means each individual or entity that creates or 
+            1.1. ï¿½Contributorï¿½ means each individual or entity that creates or 
 contributes to the creation of Modifications.
           o
 
-            1.2. “Contributor Version” means the combination of the Original 
+            1.2. ï¿½Contributor Versionï¿½ means the combination of the Original 
 Software, prior Modifications used by a Contributor (if any), and the Modifications 
 made by that particular Contributor.
           o
 
-            1.3. “Covered Software” means (a) the Original Software, or (b) 
+            1.3. ï¿½Covered Softwareï¿½ means (a) the Original Software, or (b) 
 Modifications, or (c) the combination of files containing Original Software with 
 files containing Modifications, in each case including portions thereof.
           o
 
-            1.4. “Executable” means the Covered Software in any form other than 
+            1.4. ï¿½Executableï¿½ means the Covered Software in any form other than 
 Source Code.
           o
 
-            1.5. “Initial Developer” means the individual or entity that first makes 
+            1.5. ï¿½Initial Developerï¿½ means the individual or entity that first makes 
 Original Software available under this License.
           o
 
-            1.6. “Larger Work” means a work which combines Covered Software or 
+            1.6. ï¿½Larger Workï¿½ means a work which combines Covered Software or 
 portions thereof with code not governed by the terms of this License.
           o
 
-            1.7. “License” means this document.
+            1.7. ï¿½Licenseï¿½ means this document.
           o
 
-            1.8. “Licensable” means having the right to grant, to the maximum extent 
+            1.8. ï¿½Licensableï¿½ means having the right to grant, to the maximum extent 
 possible, whether at the time of the initial grant or subsequently acquired, any and 
 all of the rights conveyed herein.
           o
 
-            1.9. “Modifications” means the Source Code and Executable form of any of 
+            1.9. ï¿½Modificationsï¿½ means the Source Code and Executable form of any of 
 the following:
                 +
 
@@ -2192,24 +2192,24 @@ previous Modification; or
 under the terms of this License.
           o
 
-            1.10. “Original Software” means the Source Code and Executable form of 
+            1.10. ï¿½Original Softwareï¿½ means the Source Code and Executable form of 
 computer software code that is originally released under this License.
           o
 
-            1.11. “Patent Claims” means any patent claim(s), now owned or hereafter 
+            1.11. ï¿½Patent Claimsï¿½ means any patent claim(s), now owned or hereafter 
 acquired, including without limitation, method, process, and apparatus claims, in any 
 patent Licensable by grantor.
           o
 
-            1.12. “Source Code” means (a) the common form of computer software code 
+            1.12. ï¿½Source Codeï¿½ means (a) the common form of computer software code 
 in which modifications are made and (b) associated documentation included in or with 
 such code.
           o
 
-            1.13. “You” (or “Your”) means an individual or a legal entity exercising 
+            1.13. ï¿½Youï¿½ (or ï¿½Yourï¿½) means an individual or a legal entity exercising 
 rights under, and complying with all of the terms of, this License. For legal 
-entities, “You” includes any entity which controls, is controlled by, or is under 
-common control with You. For purposes of this definition, “control” means (a) the 
+entities, ï¿½Youï¿½ includes any entity which controls, is controlled by, or is under 
+common control with You. For purposes of this definition, ï¿½controlï¿½ means (a) the 
 power, direct or indirect, to cause the direction or management of such entity, 
 whether by contract or otherwise, or (b) ownership of more than fifty percent (50%) 
 of the outstanding shares or beneficial ownership of such entity.
@@ -2319,7 +2319,7 @@ the Initial Developer.
 
             You may not offer or impose any terms on any Covered Software in Source 
 Code form that alters or restricts the applicable version of this License or the 
-recipients’ rights hereunder. You may choose to offer, and to charge a fee for, 
+recipientsï¿½ rights hereunder. You may choose to offer, and to charge a fee for, 
 warranty, support, indemnity or liability obligations to one or more recipients of 
 Covered Software. However, you may do so only on Your own behalf, and not on behalf 
 of the Initial Developer or any Contributor. You must make it absolutely clear that 
@@ -2335,7 +2335,7 @@ of warranty, support, indemnity or liability terms You offer.
 terms of this License or under the terms of a license of Your choice, which may 
 contain terms different from this License, provided that You are in compliance with 
 the terms of this License and that the license for the Executable form does not 
-attempt to limit or alter the recipient’s rights in the Source Code form from the 
+attempt to limit or alter the recipientï¿½s rights in the Source Code form from the 
 rights set forth in this License. If You distribute the Covered Software in 
 Executable form under a different license, You must make it absolutely clear that any 
 terms which differ from this License are offered by You alone, not by the Initial 
@@ -2388,7 +2388,7 @@ License.
 
       5. DISCLAIMER OF WARRANTY.
 
-      COVERED SOFTWARE IS PROVIDED UNDER THIS LICENSE ON AN “AS IS” BASIS, WITHOUT 
+      COVERED SOFTWARE IS PROVIDED UNDER THIS LICENSE ON AN ï¿½AS ISï¿½ BASIS, WITHOUT 
 WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, 
 WARRANTIES THAT THE COVERED SOFTWARE IS FREE OF DEFECTS, MERCHANTABLE, FIT FOR A 
 PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY AND 
@@ -2410,7 +2410,7 @@ must remain in effect beyond the termination of this License shall survive.
 
             6.2. If You assert a patent infringement claim (excluding declaratory 
 judgment actions) against Initial Developer or a Contributor (the Initial Developer 
-or Contributor against whom You assert such claim is referred to as “Participant”) 
+or Contributor against whom You assert such claim is referred to as ï¿½Participantï¿½) 
 alleging that the Participant Software (meaning the Contributor Version where the 
 Participant is a Contributor or the Original Software where the Participant is the 
 Initial Developer) directly or indirectly infringes any patent, then any and all 
@@ -2439,7 +2439,7 @@ CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FO
 LOST PROFITS, LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR 
 ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PARTY SHALL HAVE BEEN 
 INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT 
-APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY’S 
+APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTYï¿½S 
 NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS 
 DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO 
 THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
@@ -2447,10 +2447,10 @@ THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
 
       8. U.S. GOVERNMENT END USERS.
 
-      The Covered Software is a “commercial item,” as that term is defined in 48 
-C.F.R. 2.101 (Oct. 1995), consisting of “commercial computer software” (as that term 
-is defined at 48 C.F.R. § 252.227-7014(a)(1)) and “commercial computer software 
-documentation” as such terms are used in 48 C.F.R. 12.212 (Sept. 1995). Consistent 
+      The Covered Software is a ï¿½commercial item,ï¿½ as that term is defined in 48 
+C.F.R. 2.101 (Oct. 1995), consisting of ï¿½commercial computer softwareï¿½ (as that term 
+is defined at 48 C.F.R. ï¿½ 252.227-7014(a)(1)) and ï¿½commercial computer software 
+documentationï¿½ as such terms are used in 48 C.F.R. 12.212 (Sept. 1995). Consistent 
 with 48 C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June 1995), all 
 U.S. Government End Users acquire Covered Software with only those rights set forth 
 herein. This U.S. Government Rights clause is in lieu of, and supersedes, any other 
@@ -2465,11 +2465,11 @@ hereof. If any provision of this License is held to be unenforceable, such provi
 shall be reformed only to the extent necessary to make it enforceable. This License 
 shall be governed by the law of the jurisdiction specified in a notice contained 
 within the Original Software (except to the extent applicable law, if any, provides 
-otherwise), excluding such jurisdiction’s conflict-of-law provisions. Any litigation 
+otherwise), excluding such jurisdictionï¿½s conflict-of-law provisions. Any litigation 
 relating to this License shall be subject to the jurisdiction of the courts located 
 in the jurisdiction and venue specified in a notice contained within the Original 
 Software, with the losing party responsible for costs, including, without limitation, 
-court costs and reasonable attorneys’ fees and expenses. The application of the 
+court costs and reasonable attorneysï¿½ fees and expenses. The application of the 
 United Nations Convention on Contracts for the International Sale of Goods is 
 expressly excluded. Any law or regulation which provides that the language of a 
 contract shall be construed against the drafter shall not apply to this License. You 
